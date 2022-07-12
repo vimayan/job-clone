@@ -1,0 +1,35 @@
+.Header{
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    display: flex;
+    position: sticky;
+    top:0px;
+    background-color: aliceblue;
+    z-index: 1500;
+   
+}
+.Header .menu{
+
+    flex-shrink: none;
+}
+.Header .menu>ul{
+   font-size: 14px;
+   font-weight: 500;
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    cursor: pointer;
+    white-space: nowrap;
+}
+ li:hover{
+    color: red;
+}
+
+
+.Header>img{
+width: 120px;
+
+}
