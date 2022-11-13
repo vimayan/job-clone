@@ -12,8 +12,8 @@ import money  from '../.././DATA/money.svg'
 import users  from '../.././DATA/users.svg'
 import briefcase  from '../.././DATA/briefcase.svg'
 import face  from '../.././DATA/face.svg'
-import interior from '../.././DATA/interior.jpg'
-import interior1 from '../.././DATA/interior-1.jpg'
+/*import interior from '../.././DATA/interior.jpg'
+import interior1 from '../.././DATA/interior-1.jpg'*/
 import avatar from '../.././DATA/avatar.png'
 
 

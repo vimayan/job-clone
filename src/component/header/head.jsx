@@ -6,7 +6,7 @@ import fb from '../.././DATA/facebook.svg'
 import lin from '../.././DATA/linkedin.svg'
 import yb from '../.././DATA/youtube.svg'
 import search from '../.././DATA/magnifying.svg'
-import front from '../.././DATA/big.jpg'
+/*import front from '../.././DATA/big.jpg'*/
 
 function Head() { 
     return(
