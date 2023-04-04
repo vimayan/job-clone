@@ -1,19 +1,19 @@
 .Header{
     align-items: center;
-    justify-content: center;
+    justify-content:space-evenly;
     gap: 100px;
     display: flex;
     position: sticky;
     top:0px;
     background-color: aliceblue;
     z-index: 1500;
+    
+    
+
    
 }
-.Header .menu{
 
-    flex-shrink: none;
-}
-.Header .menu>ul{
+ul{
    font-size: 14px;
    font-weight: 500;
     gap: 20px;
@@ -23,6 +23,7 @@
     list-style: none;
     cursor: pointer;
     white-space: nowrap;
+    transition: transform 0.5s ease-in-out;
 }
  li:hover{
     color: red;
@@ -33,3 +34,105 @@
 width: 120px;
 
 }
+input {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    top: 20px;
+    right: 17px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+.hamburger {
+    display: block;
+    height: 26px;
+    width: 32px;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+ .hamburger .line {
+    display: none;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #0e2431;
+  }
+.hamburger .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+.hamburger .line2 {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .hamburger .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+
+
+@media screen and (max-width:1200px) {
+
+
+
+        .Header{
+           padding-left: 50px;
+            justify-content: space-between;
+            align-items:start;
+            
+             }
+
+    ul{   
+        
+        position: fixed;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        top: 20px;
+        right:-250px;
+        align-items: start;      
+         flex-direction: column;
+         margin-top: 80px;
+         width: 200px;
+         background: aliceblue;
+         transition: transform 0.5s ease-in-out;
+         z-index: 10;
+         
+     }
+     li{
+        border-bottom:solid 1px;
+     }
+     .hamburger .line{
+        display: block;
+     }
+    
+}
+
+
+  
+input[type="checkbox"]:checked ~ ul {
+    transform: translateX(-250px);
+  }
+  
+input[type="checkbox"]:checked ~ .hamburger .line1 {
+    transform: rotate(45deg);
+  }
+
+input[type="checkbox"]:checked ~ .hamburger .line2 {
+    transform: scaleY(0);
+  }
+  
+input[type="checkbox"]:checked ~ .hamburger .line3 {
+    transform: rotate(-45deg);
+  }
+  

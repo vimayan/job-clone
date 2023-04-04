@@ -1,3 +1,5 @@
+
+
 .whatsapp{
 position: fixed;
 bottom: 50px;
@@ -6,12 +8,17 @@ width: 50px;
 cursor: pointer;
 }
 
+.banner{
+    height: auto;
+    max-width: 98vw;
+}
+
 .about>img{
  float: left;
 
 }
 .about{
-
+  
     margin-top: 100px;
     display: flex;
     align-items: center;
@@ -44,13 +51,14 @@ h5{
 }
 
 .weDo{
+
 margin-top: 150px;
 padding-left: 180px;
 padding-right: 180px;
 display: flex;
 flex-direction: row;
 align-items: center;
-justify-content: centre;
+justify-content: center;
 gap: 30px;
 }
 
@@ -72,7 +80,7 @@ gap: 30px;
 
 .hower>span{
     position: absolute;
-    width:240px;
+    max-width:240px;
     margin-top: 20px;
     margin-left: 5px;
     text-align: start;
@@ -128,8 +136,8 @@ cursor: pointer;
 
 .whyClass{
     display: grid;
-    grid-template-columns:  360px 360px 360px;
-    margin-left: 150px;
+    grid-template-columns:  24vw 24vw 24vw;
+    margin-left: 10vw;
     margin-top: 50px;
     grid-column-gap: 50px;
     grid-row-gap: 30px;
@@ -148,7 +156,7 @@ cursor: pointer;
     justify-content: center;
     text-align: justify;
     border: 1ps solid gray;
-    width: 360px;
+    width: 24vw;
     background-color: rgb(234, 239, 243);
     padding: 10px 10px 10px 10px ;
     border-radius: 15px;
@@ -157,9 +165,10 @@ cursor: pointer;
 
 .support{
     margin-top: 80px;
+    margin-left: 3px;
     background-image:url(../.././DATA/testi-bg.jpg) ;
-    width: 100%;
-    height: 400px;
+    width: 98vw;
+    height: 430px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -167,7 +176,7 @@ cursor: pointer;
 }
 .support p{
     
-    width: 500px;
+    width: 60vw;
     font-size: 15px;
     line-height: 26px;
     border-radius: 30px;
@@ -217,3 +226,72 @@ cursor: pointer;
    
 
 }*/
+
+
+@media screen and (max-width:800px) {
+
+    .about{
+        flex-direction: column;
+    }
+    .about div{
+       
+       margin-left: 50px ;
+       text-align: justify;
+    }
+    .about>img{
+        
+        margin: 0 20px 0 0;
+       
+       }
+
+       .banner{
+        height: auto;
+        max-width: 96vw;
+    }
+       .weDo{
+
+        margin-top: 150px;
+        padding-left: 30px;
+        padding-right: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        }
+       .wedoList{
+
+      flex-direction: column;
+    
+    
+    }
+
+    .whyClass{
+      
+        grid-template-columns:  30vw ;
+        margin-left: 25vw;
+       
+     
+    }
+    .whyClass>div{
+
+       
+        width: 50vw
+       
+    
+    }
+    .support{
+        width: 95vw;
+    }
+    
+}
+
+
+@media screen and (max-width:1200px) {
+    
+    .weDo{
+        flex-direction: column;
+     }
+     
+    
+}

@@ -24,7 +24,7 @@ function Page() {
     return(
 <div className="page">
 <img src={whatsapp} alt="error" className="whatsapp" />
-     <img src={front} alt="error" style={{maxWidth:'1500px',}} />
+     <img src={front} alt="error" className="banner"/>
      <div className="about">
         <img src={about} alt="error" />
         <div>
@@ -67,6 +67,7 @@ function Page() {
 
         
      </div>
+
      <div className="weDo">
      <div>
               <h5>WHAT WE DO</h5>
@@ -90,7 +91,8 @@ function Page() {
             to be tailor made based on your wants and needs.
              We undertake to provide Home Interiors that include
               Wardrobes, Modular Kitchen, False ceiling, Lighting,
-               Entertainment centre, Puja and crockery units Read More</span><img src={home} alt="error" /></div>
+               Entertainment centre, Puja and crockery units Read More</span>
+               <img src={home} alt="error" /></div>
         <span>
         Home interiors
         </span>
@@ -100,7 +102,8 @@ function Page() {
             to be tailor made based on your wants and needs.
              We undertake to provide Home Interiors that include
               Wardrobes, Modular Kitchen, False ceiling, Lighting,
-               Entertainment centre, Puja and crockery units Read More</span><img src={office} alt="error" /></div>
+               Entertainment centre, Puja and crockery units Read More</span>
+               <img src={office} alt="error" /></div>
         <span>
         Office interiors
         </span>
@@ -111,7 +114,8 @@ function Page() {
             to be tailor made based on your wants and needs.
              We undertake to provide Home Interiors that include
               Wardrobes, Modular Kitchen, False ceiling, Lighting,
-               Entertainment centre, Puja and crockery units Read More</span><img src={renovation} alt="error" /></div>
+               Entertainment centre, Puja and crockery units Read More</span>
+               <img src={renovation} alt="error" /></div>
         <span>
         Home renovation
         </span>
@@ -120,6 +124,7 @@ function Page() {
      </div>
             
         </div>
+
        <div className="whyz">
                     <h4 className="whyHead">
                       <span> WHY ZENITH?</span>  
@@ -201,7 +206,7 @@ function Page() {
         <div>
             <img src={avatar} alt="error" />
             <span> 
-                uma saravanan</span>
+                villavan vimal</span>
 
         </div>
           

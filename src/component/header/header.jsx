@@ -6,7 +6,8 @@ function Header() {
     return(
 <div className="Header">
         <img src={img1} alt="error" />
-        <div className="menu">
+        <input type="checkbox" name="" id="" />
+        
             <ul>
                 <li>HOME</li>
                 <li>ABOUT US</li>
@@ -18,7 +19,12 @@ function Header() {
                 <li>FAQ</li>
                 <li>CONTACT US</li>
             </ul>
-        </div>
+      
+        <div class="hamburger">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+            </div>  
     
     
     
